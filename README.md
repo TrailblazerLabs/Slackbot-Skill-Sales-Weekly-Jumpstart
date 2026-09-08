@@ -1,42 +1,20 @@
-# Cohort-Repo-Template
-This is the core structure of Trailblazer Labs repos
-# [Project Name]
-
-![Project Banner](./assets/banner.png)
+# Slackbot Skill - Sales Weekly Jumpstart
 
 ## Overview
-[1-2 sentences explaining exactly what this asset does and who it is for.]
+A Slackbot skill that generates a rep's start-of-week sales briefing — cross-referencing this week's calendar, Salesforce pipeline, Slack activity, and call-recording insights into one Slack surface. Built for individual sales reps and managers who want a Monday-morning view of their week without manually piecing it together across four different tools.
 
 ## The Problem It Solves
-[Describe the pain point, manual process, or architectural gap this project addresses.]
-
-## See it in Action
-![Demo GIF or Image](./assets/demo.gif)
-*(Optional: walkthrough video here)*
+Reps start the week by opening separate tools — calendar, CRM, Slack, call recordings, etc. — and manually stitching together context for each client meeting: what stage is this deal in, did the client ask something in Slack that never got answered, did the last call surface a promise that hasn't been followed up on. That reconciliation is manual, easy to skip under time pressure, and usually happens reactively (minutes before a call) rather than proactively (at the start of the week, when there's still time to act). Meanwhile, CRM hygiene issues — missing next steps, stale opportunities, deals past their close date — pile up silently because no one is prompted to look until forecast time. This skill automates the cross-referencing and surfaces the hygiene gaps before they become forecasting problems.
 
 ## Quick Start Guide
 
 ### Prerequisites
-- [e.g., Requires Agentforce or Service Cloud]
-- [e.g., My Domain must be enabled]
-
-### Option 1: 1-Click Install (Recommended for Admins where applicable)
-Deploy this asset directly to your Sandbox or Developer Edition org without touching the command line.
-
-[![Deploy to Salesforce](https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png)](https://githubsfdeploy.herokuapp.com?owner=Trailblazer-Labs&repo=your-repo-name)
-
-### Option 2: Install via Salesforce CLI (For Developers where applicable)
-If you prefer to deploy using a local environment, run the following commands:
-
-1. Clone this repository:
-   `git clone https://github.com/Trailblazer-Labs/your-repo-name.git`
-2. Deploy the metadata to your target org:
-   `sf project deploy start --target-org your-alias`
+Slack workspace with Slackbot surfaces enabled
+Salesforce connected to Slack via MCP (Connect Slackbot to Salesforce with MCP)
+Calendar connected (Google Calendar or Outlook Calendar)
+Optional, for full functionality: a call-recording tool connected via MCP or integration posting recaps into customer channels (Gong, Chorus, Fireflies, or similar)
 
 ### Post-Installation Steps
-1. Assign the necessary permission sets:
-   `sf org assign permset --name Your_Perm_Set`
-2. [Add any manual setup steps here, like activating a Flow or adjusting a layout]
 
 ## About the Creator
-Built by [@YourGitHubUsername](https://github.com/YourGitHubUsername) as part of the Trailblazer Labs Builder in Residence Cohort.
+Built by @aliwaguespack (https://github.com/aliwaguespack) as part of the Trailblazer Labs Builder in Residence Cohort.
